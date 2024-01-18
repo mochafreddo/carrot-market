@@ -1,3 +1,4 @@
+import Button from "@/components/button";
 import type { NextPage } from "next";
 import Layout from "../../components/layout";
 
@@ -30,9 +31,7 @@ const ItemDetail: NextPage = () => {
               the first motherfucker to get shot. You understand?
             </p>
             <div className="flex items-center justify-between space-x-2">
-              <button className="flex-1 bg-orange-500 text-white py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 font-medium hover:bg-orange-600 focus:ring-orange-500 ">
-                Talk to seller
-              </button>
+              <Button large text="Talk to seller" />
               <button className="p-3 rounded-md flex items-center justify-center text-gray-400 hover:bg-gray-100 hover:text-gray-500">
                 <svg
                   className="h-6 w-6 "
@@ -55,7 +54,7 @@ const ItemDetail: NextPage = () => {
         </div>
         <div>
           <h2 className="text-2xl font-bold text-gray-900">Similar items</h2>
-          <div className=" mt-6 grid grid-cols-2 gap-4">
+          <div className="mt-6 grid grid-cols-2 gap-4">
             {[1, 2, 3, 4, 5, 6].map((_, i) => (
               <div key={i}>
                 <div className="h-56 w-full mb-4 bg-slate-300" />
